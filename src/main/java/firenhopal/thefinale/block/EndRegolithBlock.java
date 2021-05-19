@@ -52,7 +52,7 @@ public class EndRegolithBlock extends Block implements Fertilizable {
       while(var7.hasNext()) {
          BlockPos blockPos = (BlockPos)var7.next();
          BlockState blockState = world.getBlockState(blockPos);
-         if (blockState.isIn(FinaleTags.END_GRASS_TAG) && !possibleBlockStates.contains(blockState)) {
+         if (blockState.isIn(FinaleTags.END_GRASS_TAG)) {
             possibleBlockStates.add(blockState);
          }
 

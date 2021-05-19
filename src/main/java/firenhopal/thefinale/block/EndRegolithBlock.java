@@ -1,6 +1,5 @@
 package firenhopal.thefinale.block;
 
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
@@ -54,7 +53,7 @@ public class EndRegolithBlock extends Block implements Fertilizable {
          BlockPos blockPos = (BlockPos)var7.next();
          BlockState blockState = world.getBlockState(blockPos);
          if (blockState.isIn(FinaleTags.END_GRASS_TAG) && !possibleBlockStates.contains(blockState)) {
-            possibleBlockStates.add(blockState)
+            possibleBlockStates.add(blockState);
          }
 
          if (possibleBlockStates.size() > 0) {

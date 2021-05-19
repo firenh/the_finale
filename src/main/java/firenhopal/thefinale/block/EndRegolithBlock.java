@@ -1,6 +1,8 @@
 package firenhopal.thefinale.block;
 
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Iterator;
 import java.util.Random;
 
@@ -43,21 +45,20 @@ public class EndRegolithBlock extends Block implements Fertilizable {
    }
 
    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-      BlockState[] possibleBlockStates = {};
+      
+      List<BlockState>  possibleBlockStates = new ArrayList<>();
 
       Iterator var7 = BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1)).iterator();
 
       while(var7.hasNext()) {
          BlockPos blockPos = (BlockPos)var7.next();
          BlockState blockState = world.getBlockState(blockPos);
-         if (blockState.isIn(FinaleTags.END_GRASS_TAG)) {
-            possibleBlockStates = Arrays.copyOf(possibleBlockStates, possibleBlockStates.length + 1);
-            possibleBlockStates[possibleBlockStates.length - 1] = world.getBlockState(pos);
+         if (blockState.isIn(FinaleTags.END_GRASS_TAG) && !possibleBlockStates.contains(blockState)) {
+            possibleBlockStates.add(blockState)
          }
 
-         if (possibleBlockStates.length > 0) {
-            BlockState finalBlockState = possibleBlockStates[(int) Math.floor(Math.random()*(possibleBlockStates.length))];
-            world.setBlockState(pos, finalBlockState);
+         if (possibleBlockStates.size() > 0) {
+            world.setBlockState(pos, possibleBlockStates.get(random.nextInt(possibleBlockStates.size())), 3);
          } 
       }
    }

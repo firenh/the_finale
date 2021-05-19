@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+      "top": "the_finale:block/green_end_grass",
+      "bottom": "the_finale:block/end_regolith",
+      "side": "the_finale:block/green_end_grass_side"
+    }
+  }

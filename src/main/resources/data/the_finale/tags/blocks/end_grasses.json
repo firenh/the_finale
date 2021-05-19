@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "the_finale:green_end_grass",
+        "the_finale:flowering_green_end_grass",
+        "the_finale:shadow_end_grass",
+        "the_finale:flowering_shadow_end_grass"
+    ]
+}

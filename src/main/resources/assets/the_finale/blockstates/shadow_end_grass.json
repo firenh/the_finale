@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "the_finale:block/shadow_end_grass"
+      },
+      {
+        "model": "the_finale:block/shadow_end_grass",
+        "y": 90
+      },
+      {
+        "model": "the_finale:block/shadow_end_grass",
+        "y": 180
+      },
+      {
+        "model": "the_finale:block/shadow_end_grass",
+        "y": 270
+      }
+    ]
+  }
+}

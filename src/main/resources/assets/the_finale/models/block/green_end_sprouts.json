@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+      "cross": "the_finale:block/green_end_sprouts"
+    }
+  }

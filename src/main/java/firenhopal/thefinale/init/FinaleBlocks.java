@@ -1,5 +1,6 @@
 package firenhopal.thefinale.init;
 
+import firenhopal.thefinale.TheFinale;
 import firenhopal.thefinale.block.EndFoliageBlock;
 import firenhopal.thefinale.block.EndGrassBlock;
 import firenhopal.thefinale.block.EndRegolithBlock;
@@ -34,25 +35,25 @@ public class FinaleBlocks {
     public static void init() {
 
         //End Grasses
-        Registry.register(Registry.BLOCK, new Identifier("the_finale", "green_end_grass"), GREEN_END_GRASS);
-        Registry.register(Registry.ITEM, new Identifier("the_finale", "green_end_grass"), new BlockItem(GREEN_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, TheFinale.modid("green_end_grass"), GREEN_END_GRASS);
+        Registry.register(Registry.ITEM, TheFinale.modid("green_end_grass"), new BlockItem(GREEN_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
-        Registry.register(Registry.BLOCK, new Identifier("the_finale", "flowering_green_end_grass"), FLOWERING_GREEN_END_GRASS);
-        Registry.register(Registry.ITEM, new Identifier("the_finale", "flowering_green_end_grass"), new BlockItem(FLOWERING_GREEN_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, TheFinale.modid("flowering_green_end_grass"), FLOWERING_GREEN_END_GRASS);
+        Registry.register(Registry.ITEM, TheFinale.modid("flowering_green_end_grass"), new BlockItem(FLOWERING_GREEN_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
-        Registry.register(Registry.BLOCK, new Identifier("the_finale", "shadow_end_grass"), SHADOW_END_GRASS);
-        Registry.register(Registry.ITEM, new Identifier("the_finale", "shadow_end_grass"), new BlockItem(SHADOW_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, TheFinale.modid("shadow_end_grass"), SHADOW_END_GRASS);
+        Registry.register(Registry.ITEM, TheFinale.modid("shadow_end_grass"), new BlockItem(SHADOW_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
-        Registry.register(Registry.BLOCK, new Identifier("the_finale", "flowering_shadow_end_grass"), FLOWERING_SHADOW_END_GRASS);
-        Registry.register(Registry.ITEM, new Identifier("the_finale", "flowering_shadow_end_grass"), new BlockItem(FLOWERING_SHADOW_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, TheFinale.modid("flowering_shadow_end_grass"), FLOWERING_SHADOW_END_GRASS);
+        Registry.register(Registry.ITEM, TheFinale.modid("flowering_shadow_end_grass"), new BlockItem(FLOWERING_SHADOW_END_GRASS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
         //End Foliage
-        Registry.register(Registry.BLOCK, new Identifier("the_finale", "green_end_sprouts"), GREEN_END_SPROUTS);
-        Registry.register(Registry.ITEM, new Identifier("the_finale", "green_end_sprouts"), new BlockItem(GREEN_END_SPROUTS, new Item.Settings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.BLOCK, TheFinale.modid("green_end_sprouts"), GREEN_END_SPROUTS);
+        Registry.register(Registry.ITEM, TheFinale.modid("green_end_sprouts"), new BlockItem(GREEN_END_SPROUTS, new Item.Settings().group(ItemGroup.DECORATIONS)));
 
         //End Regolith
-        Registry.register(Registry.BLOCK, new Identifier("the_finale", "end_regolith"), END_REGOLITH);
-        Registry.register(Registry.ITEM, new Identifier("the_finale", "end_regolith"), new BlockItem(END_REGOLITH, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, TheFinale.modid("end_regolith"), END_REGOLITH);
+        Registry.register(Registry.ITEM, TheFinale.modid("end_regolith"), new BlockItem(END_REGOLITH, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     }
 }
